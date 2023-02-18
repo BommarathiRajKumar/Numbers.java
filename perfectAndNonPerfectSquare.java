@@ -13,7 +13,6 @@ class perfectAndNonPerfectSquare{
                 //If the given number is perfect square root this block will print perfect square and break the loop.
                 System.out.print("The perfect sqare of "+userInput+" is:- "+start);
                 break;
-            
             }else if(square>userInput){
                 /*
                   This block will run when given number is a non perfect square root and give non perfect square to given number and exit loop.
@@ -29,11 +28,9 @@ class perfectAndNonPerfectSquare{
                 float remaining=(float)(square-userInput)/(2*start);
                 float finalSquare=start-remaining;
                 System.out.print("The non perfect sqare of "+userInput+" is:- "+finalSquare);
-                
                 break; 
             }
             start++;
-
         }
     }
 }
