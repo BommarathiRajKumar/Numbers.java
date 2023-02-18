@@ -9,9 +9,7 @@ class PrimeFactorsForGivenNumber{
         int cama=1;
         int check=1;
         
-        
         while(true){
-            
             if(check==1){
                 //In first loop it will check given num is prime or not, it it is prime it will print prime factors and exit entire loop.
                 //Note:- this block only run one time because any prime num have only two prime factors 1 and itself so this block will print 1 and given num and exit entire loop.
@@ -19,7 +17,6 @@ class PrimeFactorsForGivenNumber{
                     if(n%c==0){
                         fact++;
                     }
-
                 }
                 if(fact==0){
                     System.out.print(n+"*1");
@@ -27,9 +24,7 @@ class PrimeFactorsForGivenNumber{
                 }
                 check=2;
             }
-
             //If the given number is not a prime number then run below code till we get all the prime factors of given number:-
-
             fact=0;
             for(int i=2; i<=(int)Math.sqrt(start); i++){
                 //This block will take one by one prime num based on condition
@@ -52,12 +47,10 @@ class PrimeFactorsForGivenNumber{
                     }else{
                         System.out.print("*"+start);
                     }
-
                 }else{
                     //If above start prime num not divide exactly given number, then this block will run and increment the start var value.
                     start++;
                 }
-
             }else{
                 //If start var value is not a prime number then this block will run and increment the start var value and continue the loop.
                 start++;
