@@ -15,7 +15,7 @@ class perfectAndNonPerfectSquare{
                 break;
             }else if(square>userInput){
                 /*
-                  This block will run when given number is a non perfect square root and give non perfect square to given number and exit loop.
+                  This block will run when given number is a non perfect square root.
 
                   This block will find non perfect square root for given number.
                   example:- √10 
