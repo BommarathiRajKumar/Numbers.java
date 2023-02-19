@@ -1,11 +1,10 @@
 import java.util.Scanner;
 class PrimeFactorsForGivenNumber{
     static Scanner sc=new Scanner(System.in);
-    public static void main(String[] args) {
-        int n=sc.nextInt();
+
+    static void PrimeFactors(int n){
         int fact=0;
         int cama=1;
-
         for(int j=2; j<=(int)Math.sqrt(n); j++){
             if(n%j==0){
                 fact++;
@@ -30,5 +29,10 @@ class PrimeFactorsForGivenNumber{
                 }
             }
         }
+    }
+    
+    public static void main(String[] args) {
+        System.out.print("Please enter eny number to find its prime factors:- ");
+        PrimeFactors(sc.nextInt());
     }
 }
