@@ -1,12 +1,10 @@
 import java.util.Scanner;
 class perfectAndNonPerfectSquare{
     static Scanner sc=new Scanner(System.in);
-    public static void main(String[] args) {
-        System.out.print("Please enter any number to find its perfect square:- ");
-        int userInput=sc.nextInt();
+    
+    static void perfectAndNonPerfect(int userInput){
         int start =1;
         int square=0;
-        
         while(true){
             square=start*start;
             if(square==userInput){
@@ -32,5 +30,11 @@ class perfectAndNonPerfectSquare{
             }
             start++;
         }
+    }
+    
+    public static void main(String[] args) {
+        System.out.print("Please enter any number to find its perfect square:- ");
+        perfectAndNonPerfect(sc.nextInt());
+        
     }
 }
